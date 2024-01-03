@@ -25,7 +25,8 @@ footer {
 	box-sizing: border-box;
 	border-style: solid;
 	border-color: green;
-	height: 10%;
+	height: 100px;
+	line-height: 100px;
 	line-height: 10%;
 }
 p {
