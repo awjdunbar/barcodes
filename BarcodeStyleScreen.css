@@ -111,7 +111,6 @@ p {
 .barcode-container {	
 	box-sizing: border-box;
 	background-color: white;
-	border: 2px solid black;
 	width: 33.3%;
 	aspect-ratio: 1.89/1;
 	float: left;
