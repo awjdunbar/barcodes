@@ -2,8 +2,44 @@
 <html>
   <head>
     <title>Barcoding Tool</title>
+	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/barcodes/JsBarcode.ean-upc.min.js"></script>
+	<script src="BarcodeJS.js"></script>
+	<link rel="stylesheet" media = "screen" href="BarcodeStyleScreen.css">
+	<link rel="stylesheet" media = "print" href="BarcodeStylePrint.css">
   </head>
   <body>
+	<!--
     <p>Hello World</p>
+	<div>
+	<img id="test"></img>
+	</div>
+	<script>JsBarcode("#test", "1234567890128",{format: "EAN13"});</script>
+	-->
+	<div class="sidebar noprint">
+		<div class="input noprint">
+			<h1 font-family="Arial">INPUT</h1>
+			<div id="inputflex">
+				<label for="code-in" id="inlabel">Barcode:</label>
+				<input type="search" id="code-in" name="code-in" placeholder="Enter Barcode Here" onkeyup="inEnter(event)"></input>
+				<button type="button" id="add" onclick="addEntry()">Add</button>
+			</div>
+			<div id="buttondiv">
+				<button type="button" class="actionbutton" style="background-color:#f44336;" onclick="completeReset()">RESET</button>
+				<button type="button" class="actionbutton" style="background-color:#04AA6D;" onclick="printPage()">PRINT</button>
+			</div>
+		</div>
+		<div class="list noprint" id="displaylist">
+		</div>
+	</div>
+	<div class="preview">
+		<div class="page" id="page">			
+			<div id="total-container">
+				<span id="qtyspan">
+					<h1 class="totallabel">Total</h1>
+					<h1 class="totallabel" id="total">0</h1>
+				</span>
+			</div>
+		</div>
+	</div>	
   </body>
 </html>
