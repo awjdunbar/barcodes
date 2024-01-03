@@ -18,6 +18,21 @@ h1 {
 	margin: auto;
 	text-align: center;
 }
+footer {
+	text-align: center;
+	padding: 5px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: green;
+	height: 10%;
+	line-height: 10%;
+}
+p {
+	line-height: 1.1;
+	display: inline-block;
+	vertical-align: middle;
+}
 .qty-label {
 	font-size: 1.5vw;
 }
