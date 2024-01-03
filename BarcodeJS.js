@@ -70,7 +70,7 @@ function createPageEntry(code) {
 }
 function inEnter(event){
 	const input = document.getElementById("code-in");
-	if (event.code == "Enter"){
+	if (event.code == "Enter" || event.code == "NumpadEnter"){
 		addEntry();
 		input.value = "";
 	}
