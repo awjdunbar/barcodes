@@ -42,7 +42,7 @@ function createListRow(code) {
 	delbutton.id = "del-"+code;
 	delbutton.setAttribute("code", code);
 	delbutton.className = "delbutton";
-	delbutton.innerHTML = "❌"
+	delbutton.innerHTML = "CLEAR"
 	delbutton.addEventListener("click", delRow);
 	row.appendChild(delbutton);
 	
@@ -61,7 +61,7 @@ function createPageEntry(code) {
 	const bar = document.createElement("img");
 	bar.id = code;
 	bar.className = "barcode";
-	JsBarcode(bar, code,{format: "EAN13"});
+	JsBarcode(bar, code,{format: "EAN13", height: 75});
 	
 	cont.appendChild(lab);
 	cont.appendChild(bar);
@@ -157,7 +157,7 @@ function updateTotal() {
 	for (const x of barcodes.values()){
 		tot += x;
 	}
-	document.getElementById("total").innerHTML = tot;
+	document.getElementById("totalp").innerHTML = "Total<br>"+tot;
 }
 function updateAllTotals() {
 	for (const x of barcodes.keys()) {

@@ -33,6 +33,12 @@ p {
 	line-height: 1.1;
 	display: inline-block;
 	vertical-align: middle;
+	font-family: Arial;
+}
+.totalp {
+	font-size: 2.5vw;
+	margin: 0px;
+	font-weight: bold;
 }
 .qty-label {
 	font-size: 1.5vw;
@@ -111,10 +117,12 @@ p {
 }
 .barcode-container {	
 	box-sizing: border-box;
+	/*border: 2px solid black;*/
 	background-color: white;
 	width: 33.3%;
 	aspect-ratio: 1.89/1;
 	float: left;
+	vertical-align: top;
 }
 #total-container {	
 	display: flex;
@@ -129,6 +137,7 @@ p {
 	float: left;
 	text-align: center;
 	line-height: 100%;
+	vertical-align: top;
 }
 .actionbutton {
 	background-color: #04AA6D; /* Green */
