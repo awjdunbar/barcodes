@@ -166,6 +166,10 @@ function updateAllTotals() {
 	updateTotal();
 }
 function completeReset() {
+	const resp = confirm("WARNING!\n\nThis will remove all barcodes from the \
+sheet and start again from scratch with a blank sheet.\n\n\
+Are you sure you want to do this?");
+	if(resp){
 	for (const x of barcodes.keys()) {
 		barcodes.delete(x);
 	}
@@ -178,6 +182,7 @@ function completeReset() {
 		x.remove();
 	}
 	updateTotal();
+	}
 }
 function printPage(){
 	updateAllTotals();
