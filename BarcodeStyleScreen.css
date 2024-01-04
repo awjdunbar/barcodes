@@ -20,16 +20,16 @@ h1 {
 }
 footer {
 	text-align: center;
-	padding: 5px;
+	padding: 0px;
 	margin-top: 10px;
 	box-sizing: border-box;
 	border-style: solid;
 	border-color: green;
 	height: 100px;
 	line-height: 100px;
-	line-height: 10%;
 }
 p {
+	margin-top: 0px;
 	line-height: 1.1;
 	display: inline-block;
 	vertical-align: middle;

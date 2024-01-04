@@ -2,22 +2,38 @@
 <html>
   <head>
     <title>Barcoding Tool</title>
+	<!-- including barcoding library JSBarcode from CDN -->
 	<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/barcodes/JsBarcode.ean-upc.min.js"></script>
+	<!-- Barcode generation code sourced from JSBarcode by Johan Lindell under MIT License
+	Copyright (c) 2016 Johan Lindell (johan@lindell.me)
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+	and associated documentation files (the "Software"), to deal in the Software without restriction, 
+	including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+	and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+	subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be 
+	included in all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+	LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+	WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+	<!-- including javascript from file -->
 	<script src="BarcodeJS.js"></script>
+	<!--including required stylesheets, print and screen styles kept separate -->
 	<link rel="stylesheet" media = "screen" href="BarcodeStyleScreen.css">
 	<link rel="stylesheet" media = "print" href="BarcodeStylePrint.css">
   </head>
   <body>
-	<!--
-    <p>Hello World</p>
-	<div>
-	<img id="test"></img>
-	</div>
-	<script>JsBarcode("#test", "1234567890128",{format: "EAN13"});</script>
-	-->
+	<!-- keeping all input/data-handling in a sidebar to free up most of the screenspace
+	for a preview pane -->
 	<div class="sidebar noprint">
+		<!-- first div for barcode input and control buttons -->
 		<div class="input noprint">
-			<h1 font-family="Arial">INPUT</h1>
+			<h1>INPUT</h1>
 			<div id="inputflex">
 				<label for="code-in" id="inlabel">Barcode:</label>
 				<input type="search" id="code-in" name="code-in" placeholder="Enter Barcode Here" onkeyup="inEnter(event)"></input>
@@ -28,14 +44,19 @@
 				<button type="button" class="actionbutton" style="background-color:#04AA6D;" onclick="printPage()">PRINT</button>
 			</div>
 		</div>
+		<!-- second div to contain a list of barcodes currently included in the sheet
+		this div starts empty -->
 		<div class="list noprint" id="displaylist">
 		</div>
+		<!-- footer to provide author info, a link to the page code and attribution to JSBarcode -->
 		<footer class="noprint">
 			<p>Created By: Andrew Dunbar<br>
 			Code for this page available on <a href="https://github.com/awjdunbar/barcodes">Github</a><br>
-			License: <a href="https://opensource.org/license/mit/">MIT</a></p>
+			License: <a href="https://opensource.org/license/mit/">MIT</a><br>
+			Barcodes Generated using <a href="https://lindell.me/JsBarcode/">JSBarcode</a></p>
 		</footer>
 	</div>
+	<!-- preview pane designed to give a rough view of how the page will be printed -->
 	<div class="preview">
 		<div class="page" id="page">			
 			<div id="total-container">
