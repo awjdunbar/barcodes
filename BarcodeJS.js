@@ -66,7 +66,7 @@ function createListRow(code) {
 	delbutton.id = "del-"+code;
 	delbutton.setAttribute("code", code);
 	delbutton.className = "delbutton";
-	delbutton.innerHTML = "Remove"
+	delbutton.innerHTML = "❌"
 	delbutton.addEventListener("click", delRow);
 	
 	//append elements to the containing div
