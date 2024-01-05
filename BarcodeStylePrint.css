@@ -1,6 +1,6 @@
 @page { 
     size: A4 portrait;
-    margin: 15mm 15mm 18mm 15mm;  
+    margin: 25mm 15mm 16mm 15mm;  
 }
 .noprint {
 	display: none !important;
@@ -26,7 +26,7 @@ html, body, .preview {
 	/*border: 2px solid black;*/
 	background-color: white;
 	width: 60mm;
-	height: 33mm;
+	height: 32mm;
 	/*page-break-inside: avoid;*/
 	vertical-align: top;
 	margin: 0mm;
@@ -52,7 +52,7 @@ p {
 	border: 5px solid black;
 	border-radius: 10px;
 	width: 60mm;
-	height: 33mm;
+	height: 32mm;
 	text-align: center;
 	/*page-break-inside: avoid;*/
 	margin: 0mm;
