@@ -1,6 +1,9 @@
 @page { 
     size: A4 portrait;
-    margin: 25mm 15mm 16mm 15mm;  
+    margin-top: 16mm;
+	margin-bottom: 17mm;
+	margin-left: 15mm;
+	margin-right: 15mm;
 }
 .noprint {
 	display: none !important;
@@ -21,12 +24,13 @@ html, body, .preview {
 	overflow: visible;
 }
 .barcode-container {	
+	position: relative;
 	text-align: center;
 	box-sizing: border-box;
 	/*border: 2px solid black;*/
 	background-color: white;
 	width: 60mm;
-	height: 32mm;
+	height: 33mm;
 	/*page-break-inside: avoid;*/
 	vertical-align: top;
 	margin: 0mm;
@@ -45,6 +49,7 @@ p {
 	font-weight: bold;
 }
 #total-container {	
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
@@ -52,15 +57,16 @@ p {
 	border: 5px solid black;
 	border-radius: 10px;
 	width: 60mm;
-	height: 32mm;
+	height: 33mm;
 	text-align: center;
 	/*page-break-inside: avoid;*/
 	margin: 0mm;
 	vertical-align: top;
 }
 .qty-label {
-	font-size: 28pt;
+	font-size: 24pt;
 	margin: 0px;
+	margin-top: 5mm;
 	font-weight: bold;
 }
 .barcode {
