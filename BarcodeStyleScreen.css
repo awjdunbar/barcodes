@@ -20,20 +20,86 @@ h1 {
 }
 footer {
 	text-align: center;
-	padding: 0px;
 	margin-top: 10px;
+	padding: 0px;
 	box-sizing: border-box;
-	border-style: solid;
-	border-color: green;
+	border: 3px solid green;
 	height: 100px;
-	line-height: 100px;
 }
+#footertext {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	width: 100%
+}
+.footertext {
+	margin-top: 5px;
+	line-height: 20px;
+}
+
 p {
 	margin-top: 0px;
 	line-height: 1.1;
 	display: inline-block;
 	vertical-align: middle;
 	font-family: Arial;
+}
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	float: left;
+	display: inline;
+	width: 98px;
+	height: 44px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: silver;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	box-sizing: border-box;
+	border: 2px solid black;
+}
+#gitlink {
+	background-color: purple;
+	border-right-width: 1px;
+}
+#gitlink:hover {
+	background-color: MediumPurple;
+}
+#barlink {
+	background-color: #379583;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+#barlink:hover {
+	background-color: #a3c2bc;
+}
+#helplink {
+	background-color: navy;	
+	border-left-width: 1px;
+	position: relative;
+}
+#helplink:hover {
+	background-color: blue;
+}
+#helplink:hover .tooltip{
+	visibility: visible;
+}
+
+li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	width: 100%;
+	height: 100%;
 }
 .totalp {
 	font-size: 2.5vw;
@@ -67,8 +133,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	border-style: solid;
-	border-color: green;
+	border: 3px solid green;
 	width: 100%;
 	height: 140px;
 	min-height: 140px;
@@ -77,8 +142,7 @@ p {
 }
 .list {
 	box-sizing: border-box;
-	border-style: solid;
-	border-color: green;
+	border: 3px solid green;
 	padding: 0px;
 	flex-grow: 1;
 	overflow-y: scroll;
@@ -94,8 +158,7 @@ p {
 }
 .preview {
 	box-sizing: border-box;
-	border-style: solid;
-	border-color: green;
+	border: 3px solid green;
 	height: 100%;
 	padding: 0px;
 	float: none;
@@ -195,4 +258,23 @@ p {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: normal;
+}
+.tooltip {
+	visibility: hidden;
+	width: 98px;
+	height: 44px;
+	background-color: white;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-left-width: 1px;
+	color: black;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	top: -2px;
+	left: 0px;
+	padding: 2px;
+}
+.tiptext {
+	font-size: 12px;
 }

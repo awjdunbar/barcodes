@@ -54,10 +54,14 @@
 		</div>
 		<!-- footer to provide author info, a link to the page code and attribution to JSBarcode -->
 		<footer class="noprint">
-			<p>Created By: Andrew Dunbar<br>
-			Code for this page available on <a href="https://github.com/awjdunbar/barcodes">Github</a><br>
-			License: <a href="https://opensource.org/license/mit/">MIT</a><br>
-			Barcodes Generated using <a href="https://lindell.me/JsBarcode/">JSBarcode</a></p>
+			<div id="footertext">
+				<p class="footertext">Created By: Andrew Dunbar<br>Barcodes generated using JsBarcode</p>
+			</div>
+			<ul>
+				<li id="gitlink"><a href="https://github.com/awjdunbar/barcodes" target="_blank">GitHub</a></li>
+				<li id="barlink"><a href="https://lindell.me/JsBarcode/" target="_blank">JsBarcode</a></li>
+				<li id="helplink"><a>Help</a><span class="tooltip"><p class="tiptext">Not yet implemented</p></span></li>
+			</ul>
 		</footer>
 	</div>
 	<!-- preview pane designed to give a rough view of how the page will be printed -->
