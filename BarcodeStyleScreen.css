@@ -81,12 +81,12 @@ li {
 	background-color: #a3c2bc;
 }
 #helplink {
-	background-color: navy;	
+	background-color: cornflowerblue;	
 	border-left-width: 1px;
 	position: relative;
 }
 #helplink:hover {
-	background-color: blue;
+	background-color: deepskyblue;
 }
 #helplink:hover .tooltip{
 	visibility: visible;
