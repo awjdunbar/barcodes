@@ -17,6 +17,28 @@ img {
 	background-color: #014421;
 	overflow: hidden;
 }
+footer {
+	background-color: #014421;
+	margin: 0mm;
+	padding: 20px;
+	text-align: center;
+}
+footer span {
+	display: inline-block;
+	margin: 5px 20px 5px 20px;
+	color: white;
+}
+footer span p{
+	margin: 0mm;
+	padding: 0mm;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	text-decoration: underline;
+}
 .navbar {
 	display: inline-block;
 	float: right;
@@ -73,7 +95,7 @@ article {
 h1 {
 	margin: 0px;
 	padding-top: 0px;
-	font-size: 32pt;
+	font-size: 28pt;
 }
 .navlink {
 	float: right;
@@ -122,5 +144,30 @@ h1 {
 @media (max-width: 927px) {
     .navbar {
 		float: left;
+	}
+}
+@media (max-width: 720px) {
+	img {
+		float: none;
+	}
+	article p,li{
+		font-size: 10pt;
+	}
+	article h1{
+		font-size: 20pt;
+	}
+	article h2{
+		font-size: 16pt;
+	}
+	#titleblock {
+		width: 100%;
+		height: 100%;
+		line-height: 100%;
+		padding-bottom: 0mm;
+		margin-bottom: 0mm;
+	}
+	#title {
+		margin: 0mm;
+		padding: 0mm;
 	}
 }

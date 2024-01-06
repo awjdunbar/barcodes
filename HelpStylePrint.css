@@ -4,7 +4,7 @@
 	margin-bottom: 15mm;
 	margin-left: 15mm;
 	margin-right: 15mm;
-	padding: omm;
+	padding: 0mm;
 }
 .noprint {
 	display: none !important;
@@ -29,7 +29,7 @@ img {
 h1 {
 	margin: 0px;
 	padding-top: 0px;
-	font-size: 32pt;
+	font-size: 28pt;
 }
 #pg1 {
 	page-break-after: always;
