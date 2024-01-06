@@ -1,0 +1,126 @@
+body {
+	background-color: silver;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+img {
+	float: right;
+	margin: 5mm;
+	border: 2px solid silver;
+	padding: 3mm;
+}
+#pageheader {
+	padding-left: 20px;
+	display: block;
+	min-height: 80px;
+	background-color: #014421;
+	overflow: hidden;
+}
+.navbar {
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #014421;
+	padding-left: 10px;
+}
+.navitem {
+	float: left;
+	display: inline;
+	height: 60px;
+	line-height: 60px;
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background-color: #014421;
+	font-family: Arial;
+	font-weight: bold;
+	
+}
+.navitem > a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+.navitem > p{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+article {
+	max-width: 210mm;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: white;
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 0px;
+	padding: 15mm;
+}
+h1 {
+	margin: 0px;
+	padding-top: 0px;
+	font-size: 32pt;
+}
+.navlink {
+	float: right;
+	width: 100px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	margin: 10px 10px 10px 0px;
+	padding: 0mm;
+}
+#titleblock {
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	height: 80px;
+	line-height: 80px;
+	width: 550px;
+	background-color: #014421;
+}
+#title {
+	margin: 0mm;
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-weight: bold;
+	font-size: 50px;
+}
+#printlink {
+	background-color: cornflowerblue;
+}
+#printlink:hover {
+	background-color: deepskyblue;
+}
+#barlink {
+	background-color: #379583;
+}
+#barlink:hover {
+	background-color: #a3c2bc;
+}
+#gitlink {
+	background-color: purple;
+}
+#gitlink:hover {
+	background-color: MediumPurple;
+}
+@media (max-width: 927px) {
+    .navbar {
+		float: left;
+	}
+}

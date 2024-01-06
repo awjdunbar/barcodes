@@ -222,10 +222,13 @@ function verifyCode(code){
 function delRow(event){
 	const source = event.srcElement;
 	var code = source.getAttribute("code");
-	barcodes.delete(code);
-	document.getElementById("row-"+code).remove();
-	document.getElementById("cont-"+code).remove();
-	updateTotal();
+	const resp = confirm("Remove barcode '"+code+"' from the list?");
+	if (resp) {
+		barcodes.delete(code);
+		document.getElementById("row-"+code).remove();
+		document.getElementById("cont-"+code).remove();
+		updateTotal();
+	}
 }
 
 /**

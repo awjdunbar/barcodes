@@ -1,9 +1,10 @@
 @page { 
     size: A4 portrait;
-    margin-top: 16mm;
-	margin-bottom: 17mm;
+    margin-top: 25mm;
+	margin-bottom: 16mm;
 	margin-left: 15mm;
 	margin-right: 15mm;
+	padding: 0mm;
 }
 .noprint {
 	display: none !important;
@@ -30,7 +31,7 @@ html, body, .preview {
 	/*border: 2px solid black;*/
 	background-color: white;
 	width: 60mm;
-	height: 33mm;
+	height: 32mm;
 	/*page-break-inside: avoid;*/
 	vertical-align: top;
 	margin: 0mm;
@@ -45,7 +46,7 @@ p {
 .totalp {
 	font-size: 32pt;
 	margin: 0mm;
-	margin-top: 4mm;
+	margin-top: 3mm;
 	font-weight: bold;
 }
 #total-container {	
@@ -56,17 +57,19 @@ p {
 	background-color: white;
 	border: 5px solid black;
 	border-radius: 10px;
-	width: 60mm;
-	height: 33mm;
+	width: 40mm;
+	height: 32mm;
 	text-align: center;
 	/*page-break-inside: avoid;*/
 	margin: 0mm;
+	margin-left: 10mm;
+	margin-right: 10mm;
 	vertical-align: top;
 }
 .qty-label {
 	font-size: 24pt;
 	margin: 0px;
-	margin-top: 5mm;
+	/*margin-top: 5mm;*/
 	font-weight: bold;
 }
 .barcode {

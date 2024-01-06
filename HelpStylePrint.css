@@ -1,0 +1,36 @@
+@page { 
+    size: A4 portrait;
+    margin-top: 15mm;
+	margin-bottom: 15mm;
+	margin-left: 15mm;
+	margin-right: 15mm;
+	padding: omm;
+}
+.noprint {
+	display: none !important;
+}
+html, body {
+	display: contents;
+}
+article {
+	width: 180mm;
+	overflow: visible;
+	background-color: white;
+	box-sizing: border-box;
+	margin-top: 0px;
+	font-family: Arial;
+}
+img {
+	float: right;
+	margin: 5mm;
+	border: 2px solid silver;
+	padding: 3mm;
+}
+h1 {
+	margin: 0px;
+	padding-top: 0px;
+	font-size: 32pt;
+}
+#pg1 {
+	page-break-after: always;
+}
