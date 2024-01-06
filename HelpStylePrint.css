@@ -31,6 +31,12 @@ h1 {
 	padding-top: 0px;
 	font-size: 28pt;
 }
-#pg1 {
+.break-after {
+	display: block;
 	page-break-after: always;
+	position: relative;
+}
+.break-before{
+	display: block;
+	page-break-before: always;
 }

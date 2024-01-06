@@ -123,6 +123,12 @@ h1 {
 	font-weight: bold;
 	font-size: 50px;
 }
+.break-after {
+	display: none;
+}
+.break-before{
+	display: none;
+}
 #printlink {
 	background-color: cornflowerblue;
 }
